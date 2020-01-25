@@ -37,3 +37,34 @@ generate:
   - generator: javascript-client
     output: ./generated/prisma-client/
 ```
+
+## User stories
+
+There are two types of users:
+
+- Normal users
+- Admin users
+
+### Normal users
+
+- [ ] See all users
+- [ ] See professors
+- [ ] Search by name
+- [ ] Search by email
+- [ ] Search by phone number
+- [ ] Search by company
+- [ ] See user detail info
+- [ ] Create my profile (request)
+- [ ] Edit my profile (request)
+- [ ] See notice
+
+## Admin users
+
+- [ ] Create user profile
+- [ ] Create professor profile
+- [ ] Edit professor profile
+- [ ] Delete professor profile
+- [ ] Edit user profile
+- [ ] Delete user profile
+- [ ] Confirm requests
+- [ ] Create notice

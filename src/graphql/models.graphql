@@ -40,7 +40,18 @@ type GradYear {
   users: [User!]!
 }
 
+type Notice {
+  id: ID!
+  files: [File!]!
+}
+
 type Photo {
   id: ID!
+  url: String!
+}
+
+type File {
+  id: ID!
+  name: String
   url: String!
 }

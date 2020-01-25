@@ -1,4 +1,4 @@
 type Query {
   hello: String!
-  helloUser(name: String!): String!
+  helloUser(id: String!): User!
 }

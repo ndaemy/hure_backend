@@ -1,9 +1,9 @@
 type User {
-  id: ID! @id
+  id: ID!
   name: String!
-  birthday: DateTime!
-  email: String! @unique
-  cellPhone: String! @unique
+  birthday: String!
+  email: String!
+  cellPhone: String!
   company: String
   companyCategory: String
   team: String
@@ -12,14 +12,14 @@ type User {
   major: Major!
   graduated_year: GradYear!
   photo: Photo!
-  createdAt: DateTime! @createdAt
-  updatedAt: DateTime! @updatedAt
+  createdAt: String!
+  updatedAt: String!
 }
 
 type Prof {
-  id: ID! @id
+  id: ID!
   name: String!
-  email: String! @unique
+  email: String!
   workPhone: String
   title: String!
   position: String!
@@ -27,13 +27,13 @@ type Prof {
 }
 
 type Major {
-  id: ID! @id
+  id: ID!
   name: String!
   users: [User!]!
 }
 
 type GradYear {
-  id: ID! @id
+  id: ID!
   year: Int!
   semester: Int!
   generation: Int!
@@ -41,6 +41,6 @@ type GradYear {
 }
 
 type Photo {
-  id: ID! @id
+  id: ID!
   url: String!
 }

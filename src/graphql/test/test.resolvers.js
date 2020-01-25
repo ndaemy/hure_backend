@@ -1,6 +1,8 @@
+import { prisma } from '../../../generated/prisma-client';
+
 export default {
   Query: {
     hello: () => 'Hello GraphQL!',
-    helloUser: (_, { name }) => `Hello ${name}!`
+    helloUser: async (_, { id }) => await prisma.user({ id })
   }
 };

@@ -1,3 +1,11 @@
+type Admin {
+  id: ID! @id
+  username: String! @unique
+  password: String!
+  createdAt: DateTime! @createdAt
+  updatedAt: DateTime! @updatedAt
+}
+
 type User {
   id: ID! @id
   name: String!
@@ -24,12 +32,16 @@ type Prof {
   title: String!
   position: String!
   photo: Photo!
+  createdAt: DateTime! @createdAt
+  updatedAt: DateTime! @updatedAt
 }
 
 type Major {
   id: ID! @id
   name: String!
   users: [User!]!
+  createdAt: DateTime! @createdAt
+  updatedAt: DateTime! @updatedAt
 }
 
 type GradYear {
@@ -38,20 +50,20 @@ type GradYear {
   semester: Int!
   generation: Int!
   users: [User!]!
+  createdAt: DateTime! @createdAt
+  updatedAt: DateTime! @updatedAt
 }
 
 type Notice {
   id: ID! @id
   files: [File!]!
+  createdAt: DateTime! @createdAt
+  updatedAt: DateTime! @updatedAt
 }
 
 type Photo {
   id: ID! @id
   url: String!
-}
-
-type File {
-  id: ID! @id
-  name: String
-  url: String!
+  createdAt: DateTime! @createdAt
+  updatedAt: DateTime! @updatedAt
 }

@@ -27,11 +27,13 @@ type User {
 type Prof {
   id: ID! @id
   name: String!
-  email: String! @unique
+  email: String @unique
   workPhone: String
-  title: String!
-  position: String!
   photo: Photo!
+  position: String!
+  title: String!
+  company: String
+  order: Int! @unique
   createdAt: DateTime! @createdAt
   updatedAt: DateTime! @updatedAt
 }
@@ -56,14 +58,22 @@ type GradYear {
 
 type Notice {
   id: ID! @id
-  files: [File!]!
+  files: [File!]! @relation(onDelete: CASCADE)
   createdAt: DateTime! @createdAt
   updatedAt: DateTime! @updatedAt
 }
 
 type Photo {
   id: ID! @id
-  url: String!
+  url: String! @unique
+  createdAt: DateTime! @createdAt
+  updatedAt: DateTime! @updatedAt
+}
+
+type File {
+  id: ID! @id
+  url: String! @unique
+  notice: Notice!
   createdAt: DateTime! @createdAt
   updatedAt: DateTime! @updatedAt
 }

@@ -27,11 +27,13 @@ type User {
 type Prof {
   id: ID!
   name: String!
-  email: String!
+  email: String
   workPhone: String
-  title: String!
-  position: String!
   photo: Photo!
+  position: String!
+  title: String!
+  company: String
+  order: Int!
   createdAt: String!
   updatedAt: String!
 }
@@ -64,6 +66,14 @@ type Notice {
 type Photo {
   id: ID!
   url: String!
+  createdAt: String!
+  updatedAt: String!
+}
+
+type File {
+  id: ID!
+  url: String!
+  notice: Notice!
   createdAt: String!
   updatedAt: String!
 }

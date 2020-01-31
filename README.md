@@ -47,8 +47,10 @@ There are two types of users:
 
 ### Normal users
 
+- [x] See professors
+- [x] See notice
+- [ ] See last notice
 - [ ] See all users
-- [ ] See professors
 - [ ] Search by name
 - [ ] Search by email
 - [ ] Search by phone number
@@ -56,7 +58,6 @@ There are two types of users:
 - [ ] See user detail info
 - [ ] Create my profile (request)
 - [ ] Edit my profile (request)
-- [ ] See notice
 
 ## Admin users
 

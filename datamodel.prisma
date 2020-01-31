@@ -58,6 +58,8 @@ type GradYear {
 
 type Notice {
   id: ID! @id
+  title: String!
+  desc: String!
   files: [File!]! @relation(onDelete: CASCADE)
   createdAt: DateTime! @createdAt
   updatedAt: DateTime! @updatedAt

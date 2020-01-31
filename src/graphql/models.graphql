@@ -58,6 +58,8 @@ type GradYear {
 
 type Notice {
   id: ID!
+  title: String!
+  desc: String!
   files: [File!]!
   createdAt: String!
   updatedAt: String!

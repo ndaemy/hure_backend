@@ -49,7 +49,7 @@ There are two types of users:
 
 - [x] See professors
 - [x] See notice
-- [ ] See last notice
+- [x] See lastest notice
 - [ ] See all users
 - [ ] Search by name
 - [ ] Search by email

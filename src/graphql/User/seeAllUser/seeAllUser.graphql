@@ -1,0 +1,3 @@
+type Query {
+  seeAllUser(limit: Int!, page: Int!): [User!]!
+}

@@ -50,7 +50,7 @@ There are two types of users:
 - [x] See professors
 - [x] See notice
 - [x] See lastest notice
-- [ ] See all users
+- [x] See all users (with pagination)
 - [ ] Search by name
 - [ ] Search by email
 - [ ] Search by phone number

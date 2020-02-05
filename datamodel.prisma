@@ -17,6 +17,7 @@ type User {
   team: String
   position: String
   workPhone: String
+  workAddress: String
   major: Major!
   graduated_year: GradYear!
   photo: Photo!

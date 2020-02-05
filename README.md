@@ -51,11 +51,7 @@ There are two types of users:
 - [x] See notice
 - [x] See lastest notice
 - [x] See all users (with pagination)
-- [ ] Search by name
-- [ ] Search by email
-- [ ] Search by phone number
-- [ ] Search by company
-- [ ] See user detail info
+- [x] Search User by name, email, phone number, company
 - [ ] Create my profile (request)
 - [ ] Edit my profile (request)
 

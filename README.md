@@ -18,11 +18,13 @@ prisma deploy
 ### .env
 
 - PORT (optional): port number of GraphQL Server / Playground
+- JWT_SECRET (required): Passport.js JWT secret key
 
 #### Example .env file
 
 ```
 PORT=4000
+JWT_SECRET="{ YOUR_JWT_ENCRYPT_KEY }"
 ```
 
 ---
@@ -57,6 +59,7 @@ There are two types of users:
 
 ## Admin users
 
+- [x] Sign in
 - [ ] Create user profile
 - [ ] Create professor profile
 - [ ] Edit professor profile

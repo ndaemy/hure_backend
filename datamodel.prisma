@@ -41,7 +41,7 @@ type Prof {
 
 type Major {
   id: ID! @id
-  name: String!
+  name: String! @unique
   users: [User!]!
   createdAt: DateTime! @createdAt
   updatedAt: DateTime! @updatedAt
@@ -51,7 +51,7 @@ type GradYear {
   id: ID! @id
   year: Int!
   semester: Int!
-  generation: Int!
+  generation: Int! @unique
   users: [User!]!
   createdAt: DateTime! @createdAt
   updatedAt: DateTime! @updatedAt

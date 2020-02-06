@@ -60,7 +60,8 @@ There are two types of users:
 ## Admin users
 
 - [x] Sign in
-- [ ] Create user profile
+- [x] Create user profile
+  - TODO: Photo upload is not completed yet.
 - [ ] Create professor profile
 - [ ] Edit professor profile
 - [ ] Delete professor profile

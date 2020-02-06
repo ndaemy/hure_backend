@@ -5,6 +5,7 @@ import logger from 'morgan';
 import schema from './src/schema';
 import './src/passport';
 import { authenticateJwt } from './src/passport';
+import { isAuthenticated } from './src/middlewares';
 
 // Set environment
 dotenv.config();
@@ -13,7 +14,7 @@ const PORT = process.env.PORT || 4000;
 // Create server
 const server = new GraphQLServer({
   schema,
-  context: ({ request }) => ({ request })
+  context: ({ request }) => ({ request, isAuthenticated })
 });
 server.express.use(logger('dev'));
 server.express.use(authenticateJwt);

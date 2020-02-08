@@ -65,7 +65,7 @@ There are two types of users:
 - [x] Create professor profile
   - TODO: Photo upload is not completed yet.
 - [ ] Edit professor profile
-- [ ] Delete professor profile
+- [x] Delete professor profile
 - [ ] Edit user profile
 - [ ] Delete user profile
 - [ ] Confirm requests

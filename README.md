@@ -62,7 +62,8 @@ There are two types of users:
 - [x] Sign in
 - [x] Create user profile
   - TODO: Photo upload is not completed yet.
-- [ ] Create professor profile
+- [x] Create professor profile
+  - TODO: Photo upload is not completed yet.
 - [ ] Edit professor profile
 - [ ] Delete professor profile
 - [ ] Edit user profile

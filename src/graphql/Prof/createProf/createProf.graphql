@@ -1,0 +1,11 @@
+type Mutation {
+  createProf(
+    name: String!
+    email: String
+    workPhone: String
+    position: String!
+    title: String!
+    company: String
+    order: Int!
+  ): Prof!
+}

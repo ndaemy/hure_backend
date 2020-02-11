@@ -64,7 +64,8 @@ There are two types of users:
   - TODO: Photo upload is not completed yet.
 - [x] Create professor profile
   - TODO: Photo upload is not completed yet.
-- [ ] Edit professor profile
+- [x] Edit professor profile
+  - TODO: Photo edit is not completed yet.
 - [x] Delete professor profile
 - [ ] Edit user profile
 - [ ] Delete user profile

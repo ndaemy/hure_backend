@@ -73,6 +73,6 @@ There are two types of users:
 - [x] Delete professor profile
 - [x] Edit user profile
 - [x] Delete user profile
-- [ ] Confirm requests
+- [x] Confirm request
 - [x] Create notice
   - TODO: File upload is not completed yet.

@@ -6,7 +6,7 @@ export default {
     requestSecret: async (_, { email }) => {
       const emailSecret = generateSecret();
       try {
-        const user = await prisma.updateUser({
+        await prisma.updateUser({
           data: {
             emailSecret
           },

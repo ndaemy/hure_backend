@@ -18,6 +18,7 @@ type User {
   position: String
   workPhone: String
   workAddress: String
+  emailSecret: String
   isConfirmed: Boolean! @default(value: false)
   major: Major!
   graduatedYear: GradYear!

@@ -70,4 +70,5 @@ There are two types of users:
 - [ ] Edit user profile
 - [ ] Delete user profile
 - [ ] Confirm requests
-- [ ] Create notice
+- [x] Create notice
+  - TODO: File upload is not completed yet.

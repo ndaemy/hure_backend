@@ -1,0 +1,3 @@
+type Mutation {
+  createNotice(title: String!, desc: String!): Notice!
+}

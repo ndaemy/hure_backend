@@ -20,7 +20,7 @@ type User {
   workAddress: String
   isConfirmed: Boolean!
   major: Major!
-  graduated_year: GradYear!
+  graduatedYear: GradYear!
   photo: Photo!
   createdAt: String!
   updatedAt: String!

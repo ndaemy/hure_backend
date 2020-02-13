@@ -43,7 +43,7 @@ export default {
         major: {
           connect: { name: majorName }
         },
-        graduated_year: {
+        graduatedYear: {
           connect: { generation }
         },
         photo: {

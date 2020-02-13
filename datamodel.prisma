@@ -20,7 +20,7 @@ type User {
   workAddress: String
   isConfirmed: Boolean! @default(value: false)
   major: Major!
-  graduated_year: GradYear!
+  graduatedYear: GradYear!
   photo: Photo!
   createdAt: DateTime! @createdAt
   updatedAt: DateTime! @updatedAt

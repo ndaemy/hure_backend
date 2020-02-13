@@ -11,7 +11,7 @@ export default {
           AND: [
             { isConfirmed: true },
             { major: { name: major } },
-            { graduated_year: { generation: generation } }
+            { graduatedYear: { generation: generation } }
           ]
         }
       });

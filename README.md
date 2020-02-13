@@ -54,7 +54,7 @@ There are two types of users:
 - [x] See lastest notice
 - [x] See all users (with pagination / limit with major, generation)
 - [x] Search User by name, email, phone number, company
-- [ ] Create my profile (request)
+- [x] Create my profile (request)
 - [ ] Edit my profile (request)
 
 ## Admin users

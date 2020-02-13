@@ -23,7 +23,7 @@ prisma deploy
 
 #### Example .env file
 
-```
+```text
 PORT=4000
 JWT_SECRET="{ YOUR_JWT_ENCRYPT_KEY }"
 SENDGRID_API_KEY="{ YOUR_SENDGRID_API_KEY }"
@@ -61,7 +61,7 @@ There are two types of users:
 - [x] Email confirm / Sign in
 - [x] Edit my profile
 
-## Admin users
+### Admin users
 
 - [x] Sign in
 - [x] Create user profile

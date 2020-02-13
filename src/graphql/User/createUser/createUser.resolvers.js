@@ -39,6 +39,7 @@ export default {
         position,
         workPhone,
         workAddress,
+        isConfirmed: true,
         major: {
           connect: { name: majorName }
         },

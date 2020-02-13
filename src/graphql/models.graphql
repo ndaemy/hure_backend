@@ -18,6 +18,7 @@ type User {
   position: String
   workPhone: String
   workAddress: String
+  isConfirmed: Boolean!
   major: Major!
   graduated_year: GradYear!
   photo: Photo!

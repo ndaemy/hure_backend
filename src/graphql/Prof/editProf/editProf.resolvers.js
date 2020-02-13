@@ -2,8 +2,8 @@ import { prisma } from '../../../../generated/prisma-client';
 
 export default {
   Mutation: {
-    editProf: async (_, args, { request, isAuthenticated }) => {
-      isAuthenticated(request);
+    editProf: async (_, args, { request, isAdmin }) => {
+      isAdmin(request);
       const {
         id,
         name,

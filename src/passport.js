@@ -23,13 +23,35 @@ const verifyAdmin = async (payload, done) => {
   }
 };
 
-passport.use(new JwtStrategy(opts, verifyAdmin));
+const verifyUser = async (payload, done) => {
+  try {
+    const user = await prisma.user({ id: payload.id });
+    if (user) {
+      return done(null, user);
+    } else {
+      return done(null, false);
+    }
+  } catch (error) {
+    return done(error, false);
+  }
+};
+
+passport.use('admin-rule', new JwtStrategy(opts, verifyAdmin));
+passport.use('user-rule', new JwtStrategy(opts, verifyUser));
 passport.initialize();
 
-export const authenticateJwt = (req, res, next) =>
-  passport.authenticate('jwt', { session: false }, (error, admin) => {
+export const authenticateAdmin = (req, res, next) =>
+  passport.authenticate('admin-rule', { session: false }, (error, admin) => {
     if (admin) {
       req.admin = admin;
+    }
+    next();
+  })(req, res, next);
+
+export const authenticateUser = (req, res, next) =>
+  passport.authenticate('user-rule', { session: false }, (error, user) => {
+    if (user) {
+      req.user = user;
     }
     next();
   })(req, res, next);

@@ -2,8 +2,9 @@ import { prisma } from '../../../../generated/prisma-client';
 
 export default {
   Query: {
-    searchUser: async (_, { query }) =>
-      await prisma.users({
+    searchUser: async (_, { query }, { request, isAdminOrUser }) => {
+      isAdminOrUser(request);
+      return await prisma.users({
         where: {
           AND: [
             {
@@ -18,6 +19,7 @@ export default {
           ]
         },
         orderBy: 'name_ASC'
-      })
+      });
+    }
   }
 };

@@ -2,8 +2,8 @@ import { prisma } from '../../../../generated/prisma-client';
 
 export default {
   Mutation: {
-    createUser: async (_, args, { request, isAuthenticated }) => {
-      isAuthenticated(request);
+    createUser: async (_, args, { request, isAdmin }) => {
+      isAdmin(request);
       const {
         name,
         birthday,

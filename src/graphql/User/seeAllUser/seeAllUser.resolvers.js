@@ -2,7 +2,12 @@ import { prisma } from '../../../../generated/prisma-client';
 
 export default {
   Query: {
-    seeAllUser: async (_, { limit, page, major, generation }) => {
+    seeAllUser: async (
+      _,
+      { limit, page, major, generation },
+      { request, isAdminOrUser }
+    ) => {
+      isAdminOrUser(request);
       return await prisma.users({
         orderBy: 'name_ASC',
         skip: limit * (page - 1),

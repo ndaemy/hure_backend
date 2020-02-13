@@ -58,7 +58,7 @@ There are two types of users:
 - [x] Search User by name, email, phone number, company
 - [x] Create my profile (request)
 - [x] Email confirm request
-- [ ] Email confirm / Sign in
+- [x] Email confirm / Sign in
 - [ ] Edit my profile
 
 ## Admin users

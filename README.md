@@ -71,7 +71,7 @@ There are two types of users:
 - [x] Edit professor profile
   - TODO: Photo edit is not completed yet.
 - [x] Delete professor profile
-- [ ] Edit user profile
+- [x] Edit user profile
 - [x] Delete user profile
 - [ ] Confirm requests
 - [x] Create notice

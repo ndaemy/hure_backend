@@ -10,7 +10,7 @@ type Mutation {
     position: String
     workPhone: String
     workAddress: String
-    majorName: String
-    generation: Int
+    majorName: String!
+    generation: Int!
   ): User!
 }

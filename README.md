@@ -82,4 +82,4 @@ There are two types of users:
 
 ---
 
-- [ ] Create major
+- [x] Create major

@@ -53,15 +53,33 @@ There are two types of users:
 ### Admin users
 
 - [x] Sign in
+
+---
+
 - [x] Create user profile
   - TODO: Photo upload is not completed yet.
+- [x] Edit user profile
+  - TODO: Photo edit is not completed yet.
+- [x] Delete user profile
+- [x] Confirm request
+
+---
+
 - [x] Create professor profile
   - TODO: Photo upload is not completed yet.
 - [x] Edit professor profile
   - TODO: Photo edit is not completed yet.
 - [x] Delete professor profile
-- [x] Edit user profile
-- [x] Delete user profile
-- [x] Confirm request
+
+---
+
 - [x] Create notice
   - TODO: File upload is not completed yet.
+
+---
+
+- [x] Create graduated Year
+
+---
+
+- [ ] Create major

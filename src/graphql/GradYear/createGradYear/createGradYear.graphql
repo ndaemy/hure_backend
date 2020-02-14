@@ -1,0 +1,3 @@
+type Mutation {
+  createGradYear(year: Int!, semester: Int!, generation: Int!): GradYear!
+}

@@ -2,10 +2,10 @@ import { GraphQLServer } from 'graphql-yoga';
 import dotenv from 'dotenv';
 import logger from 'morgan';
 
-import schema from './src/schema';
-import './src/passport';
-import { authenticateAdmin, authenticateUser } from './src/passport';
-import { isAdmin, isUser, isAdminOrUser } from './src/middlewares';
+import schema from './schema';
+import './passport';
+import { authenticateAdmin, authenticateUser } from './passport';
+import { isAdmin, isUser, isAdminOrUser } from './middlewares';
 
 // Set environment
 dotenv.config();

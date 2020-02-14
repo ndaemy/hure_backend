@@ -6,7 +6,9 @@
   "author": "yuyaebean <yuyaebean@gmail.com>",
   "license": "MIT",
   "dependencies": {
+    "@babel/runtime": "^7.8.4",
     "@sendgrid/mail": "^6.5.2",
+    "copy": "^0.3.2",
     "crypto-random-string": "^3.1.0",
     "dotenv": "^8.2.0",
     "graphql-tools": "^4.0.6",
@@ -22,13 +24,17 @@
     "@babel/cli": "^7.8.3",
     "@babel/core": "^7.8.3",
     "@babel/node": "^7.8.3",
+    "@babel/plugin-transform-runtime": "^7.8.3",
     "@babel/preset-env": "^7.8.3",
     "nodemon": "^2.0.2"
   },
   "scripts": {
-    "dev": "nodemon --exec babel-node index.js",
+    "dev": "nodemon --exec babel-node src/app.js",
     "deploy": "prisma deploy",
     "generate": "prisma generate",
-    "prisma": "yarn deploy && yarn generate"
+    "prisma": "yarn deploy && yarn generate",
+    "build": "babel src -d build",
+    "postbuild": "cd src && copy ./graphql/**/*.graphql ../build/graphql/",
+    "start": "node build/app.js"
   }
 }

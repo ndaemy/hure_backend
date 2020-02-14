@@ -105,7 +105,6 @@ dist
 
 # Prisma
 generated/
-prisma.yml
 
 # Build
 build/

@@ -20,6 +20,7 @@ prisma deploy
 - PORT (optional): port number of GraphQL Server / Playground
 - JWT_SECRET (required): Passport.js JWT secret key
 - SENDGRID_API_KEY (required): Sendgrid API key
+- PRISMA_ENDPOINT (required): Prisma endpoint url
 
 #### Example .env file
 
@@ -27,19 +28,7 @@ prisma deploy
 PORT=4000
 JWT_SECRET="{ YOUR_JWT_ENCRYPT_KEY }"
 SENDGRID_API_KEY="{ YOUR_SENDGRID_API_KEY }"
-```
-
----
-
-### prisma.yml
-
-```yml
-endpoint: { YOUR_PRISMA_SERVER_ENDPOINT }
-datamodel: datamodel.prisma
-
-generate:
-  - generator: javascript-client
-    output: ./generated/prisma-client/
+PRISMA_ENDPOINT="{ YOUR_PRISMA_ENDPOINT_URL }"
 ```
 
 ## User stories

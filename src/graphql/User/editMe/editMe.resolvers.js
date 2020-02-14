@@ -50,9 +50,6 @@ export default {
           },
           graduatedYear: {
             connect: { generation }
-          },
-          photo: {
-            connect: { id: 'ck611mszfgevm0901zo02ntsg' }
           }
         }
       });

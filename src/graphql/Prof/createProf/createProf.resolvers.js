@@ -13,10 +13,7 @@ export default {
         position,
         title,
         company,
-        order,
-        photo: {
-          connect: { id: 'ck611mszfgevm0901zo02ntsg' }
-        }
+        order
       });
     }
   }

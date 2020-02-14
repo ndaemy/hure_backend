@@ -18,11 +18,11 @@ type User {
   position: String
   workPhone: String
   workAddress: String
+  photo: String
   emailSecret: String
   isConfirmed: Boolean!
   major: Major!
   graduatedYear: GradYear!
-  photo: Photo!
   createdAt: String!
   updatedAt: String!
 }
@@ -32,11 +32,11 @@ type Prof {
   name: String!
   email: String
   workPhone: String
-  photo: Photo!
   position: String!
   title: String!
   company: String
   order: Int!
+  photo: String
   createdAt: String!
   updatedAt: String!
 }
@@ -64,13 +64,6 @@ type Notice {
   title: String!
   desc: String!
   files: [File!]!
-  createdAt: String!
-  updatedAt: String!
-}
-
-type Photo {
-  id: ID!
-  url: String!
   createdAt: String!
   updatedAt: String!
 }

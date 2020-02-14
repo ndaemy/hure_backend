@@ -18,11 +18,11 @@ type User {
   position: String
   workPhone: String
   workAddress: String
+  photo: String
   emailSecret: String
   isConfirmed: Boolean! @default(value: false)
   major: Major!
   graduatedYear: GradYear!
-  photo: Photo!
   createdAt: DateTime! @createdAt
   updatedAt: DateTime! @updatedAt
 }
@@ -32,11 +32,11 @@ type Prof {
   name: String!
   email: String @unique
   workPhone: String
-  photo: Photo!
   position: String!
   title: String!
   company: String
   order: Int! @unique
+  photo: String
   createdAt: DateTime! @createdAt
   updatedAt: DateTime! @updatedAt
 }
@@ -64,13 +64,6 @@ type Notice {
   title: String!
   desc: String!
   files: [File!]! @relation(onDelete: CASCADE)
-  createdAt: DateTime! @createdAt
-  updatedAt: DateTime! @updatedAt
-}
-
-type Photo {
-  id: ID! @id
-  url: String! @unique
   createdAt: DateTime! @createdAt
   updatedAt: DateTime! @updatedAt
 }

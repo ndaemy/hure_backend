@@ -57,9 +57,7 @@ There are two types of users:
 ---
 
 - [x] Create user profile
-  - TODO: Photo upload is not completed yet.
 - [x] Edit user profile
-  - TODO: Photo edit is not completed yet.
 - [x] Delete user profile
 - [x] Confirm request
 

@@ -11,6 +11,7 @@ type Mutation {
     position: String
     workPhone: String
     workAddress: String
+    photo: String
     majorName: String!
     generation: Int!
   ): User!

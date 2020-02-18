@@ -16,6 +16,7 @@ export default {
         position,
         workPhone,
         workAddress,
+        photo,
         majorName,
         generation
       } = args;
@@ -44,6 +45,7 @@ export default {
           position,
           workPhone,
           workAddress,
+          photo,
           isConfirmed: true,
           major: {
             connect: { name: majorName }

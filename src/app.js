@@ -23,8 +23,10 @@ server.express.use(authenticateUser);
 
 // Handle file upload
 server.express.post('/api/upload', uploadMiddleware, (req, res) => {
-  console.log(req);
-  res.json(req.file.location);
+  const {
+    file: { location }
+  } = req;
+  res.json({ location });
 });
 
 server.start({ port: PORT }, () =>

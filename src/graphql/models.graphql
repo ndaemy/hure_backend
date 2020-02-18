@@ -63,15 +63,6 @@ type Notice {
   id: ID!
   title: String!
   desc: String!
-  files: [File!]!
-  createdAt: String!
-  updatedAt: String!
-}
-
-type File {
-  id: ID!
-  url: String!
-  notice: Notice!
   createdAt: String!
   updatedAt: String!
 }

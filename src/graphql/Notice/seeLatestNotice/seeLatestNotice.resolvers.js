@@ -4,7 +4,7 @@ export default {
   Query: {
     seeLatestNotice: async (_, __, { request, isAdminOrUser }) => {
       isAdminOrUser(request);
-      return await prisma.notices({ last: 1 });
+      return await prisma.notices({ orderBy: 'createdAt_ASC', last: 1 });
     }
   }
 };

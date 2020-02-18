@@ -74,7 +74,8 @@ There are two types of users:
 ---
 
 - [x] Create notice
-  - TODO: File upload is not completed yet.
+- [ ] Edit notice
+- [ ] Delete notice
 
 ---
 

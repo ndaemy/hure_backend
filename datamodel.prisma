@@ -63,15 +63,6 @@ type Notice {
   id: ID! @id
   title: String!
   desc: String!
-  files: [File!]! @relation(onDelete: CASCADE)
-  createdAt: DateTime! @createdAt
-  updatedAt: DateTime! @updatedAt
-}
-
-type File {
-  id: ID! @id
-  url: String! @unique
-  notice: Notice!
   createdAt: DateTime! @createdAt
   updatedAt: DateTime! @updatedAt
 }

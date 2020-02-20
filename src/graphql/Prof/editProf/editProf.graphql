@@ -8,5 +8,6 @@ type Mutation {
     title: String!
     company: String
     order: Int!
+    photo: String
   ): Prof!
 }

@@ -12,7 +12,8 @@ export default {
         position,
         title,
         company,
-        order
+        order,
+        photo
       } = args;
 
       return await prisma.updateProf({
@@ -24,7 +25,8 @@ export default {
           position,
           title,
           company,
-          order
+          order,
+          photo
         }
       });
     }

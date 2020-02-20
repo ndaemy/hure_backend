@@ -4,7 +4,16 @@ export default {
   Mutation: {
     createProf: async (_, args, { request, isAdmin }) => {
       isAdmin(request);
-      const { name, email, workPhone, position, title, company, order } = args;
+      const {
+        name,
+        email,
+        workPhone,
+        position,
+        title,
+        company,
+        order,
+        photo
+      } = args;
 
       return await prisma.createProf({
         name,
@@ -13,7 +22,8 @@ export default {
         position,
         title,
         company,
-        order
+        order,
+        photo
       });
     }
   }

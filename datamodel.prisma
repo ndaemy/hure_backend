@@ -27,6 +27,13 @@ type User {
   updatedAt: DateTime! @updatedAt
 }
 
+type Executive {
+  id: ID! @id
+  generation: Int!
+  title: String!
+  User: User! @relation(onDelete: CASCADE)
+}
+
 type Prof {
   id: ID! @id
   name: String!

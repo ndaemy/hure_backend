@@ -27,6 +27,13 @@ type User {
   updatedAt: String!
 }
 
+type Executive {
+  id: ID!
+  generation: Int!
+  title: String!
+  User: User!
+}
+
 type Prof {
   id: ID!
   name: String!

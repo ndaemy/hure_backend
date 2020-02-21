@@ -4,7 +4,7 @@ import sgMail from '@sendgrid/mail';
 
 dotenv.config();
 
-export const generateSecret = () => cryptoRandomString({ length: 10 });
+export const generateSecret = () => cryptoRandomString({ length: 5 });
 
 export const sendSecretMail = (email, secret) => {
   sgMail.setApiKey(process.env.SENDGRID_API_KEY);

@@ -44,6 +44,7 @@ There are two types of users:
 - [x] See notice
 - [x] See lastest notice
 - [x] See all users (with pagination / limit with major, generation)
+- [x] See specific user
 - [x] Search User by name, email, phone number, company
 - [x] Create my profile (request)
 - [x] Email confirm request

@@ -23,6 +23,7 @@ type User {
   isConfirmed: Boolean!
   major: Major!
   graduatedYear: GradYear!
+  executive: Executive!
   createdAt: String!
   updatedAt: String!
 }
@@ -31,7 +32,7 @@ type Executive {
   id: ID!
   generation: Int!
   title: String!
-  User: User!
+  user: User!
 }
 
 type Prof {

@@ -23,6 +23,7 @@ type User {
   isConfirmed: Boolean! @default(value: false)
   major: Major!
   graduatedYear: GradYear!
+  executive: Executive @relation(link: TABLE, onDelete: CASCADE)
   createdAt: DateTime! @createdAt
   updatedAt: DateTime! @updatedAt
 }
@@ -31,7 +32,7 @@ type Executive {
   id: ID! @id
   generation: Int!
   title: String!
-  User: User! @relation(onDelete: CASCADE)
+  user: User!
 }
 
 type Prof {

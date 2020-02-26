@@ -28,6 +28,7 @@ Hanyang Univ. Graduate School of Real Estate Convergence Reunion app backend
 
 ### Mutations
 
+- createExecutive(...): Executive
 - createGradYear(...): GradYear
 - createMajor(...): Major
 - createNotice(...): Notice

@@ -46,6 +46,7 @@ There are two types of users:
 - [x] See all users (with pagination / limit with major, generation)
 - [x] See specific user
 - [x] Search User by name, email, phone number, company
+- [ ] See executives
 - [x] Create my profile (request)
 - [x] Email confirm request
 - [x] Email confirm / Sign in
@@ -83,3 +84,9 @@ There are two types of users:
 ---
 
 - [x] Create major
+
+---
+
+- [x] Create executive
+- [ ] Edit executive
+- [ ] Delete executive

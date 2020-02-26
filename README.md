@@ -41,6 +41,7 @@ There are two types of users:
 ### Normal users
 
 - [x] See professors
+- [x] See specific professor
 - [x] See notice
 - [x] See lastest notice
 - [x] See all users (with pagination / limit with major, generation)

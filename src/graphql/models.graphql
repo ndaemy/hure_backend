@@ -13,7 +13,7 @@ type User {
   email: String!
   cellPhone: String!
   company: String
-  companyCategory: String
+  companyDesc: [String!]!
   team: String
   position: String
   workPhone: String

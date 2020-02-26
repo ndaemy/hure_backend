@@ -85,6 +85,7 @@ There are two types of users:
 ---
 
 - [x] Create major
+- [x] Edit major
 
 ---
 

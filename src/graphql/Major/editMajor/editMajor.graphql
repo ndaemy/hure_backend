@@ -1,0 +1,3 @@
+type Mutation {
+  editMajor(id: ID!, name: String!): Major!
+}

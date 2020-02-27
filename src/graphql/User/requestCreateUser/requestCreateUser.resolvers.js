@@ -36,7 +36,9 @@ export default {
         email,
         cellPhone,
         company,
-        companyDesc,
+        companyDesc: {
+          set: companyDesc
+        },
         team,
         position,
         workPhone,

@@ -30,6 +30,11 @@ export default {
         );
       }
 
+      let companyDescArray = null;
+      if (companyDesc && companyDesc !== '') {
+        companyDescArray = companyDesc.split(/\r?\n/);
+      }
+
       return await prisma.createUser({
         name,
         birthday,
@@ -37,7 +42,7 @@ export default {
         cellPhone,
         company,
         companyDesc: {
-          set: companyDesc
+          set: companyDescArray
         },
         team,
         position,

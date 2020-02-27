@@ -29,6 +29,11 @@ export default {
         throw Error('Graduated year not exist. Please make generation first.');
       }
 
+      let companyDescArray = null;
+      if (companyDesc && companyDesc !== '') {
+        companyDescArray = companyDesc.split(/\r?\n/);
+      }
+
       return await prisma.createUser({
         name,
         birthday,
@@ -36,7 +41,7 @@ export default {
         cellPhone,
         company,
         companyDesc: {
-          set: companyDesc
+          set: companyDescArray
         },
         team,
         position,

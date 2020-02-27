@@ -5,7 +5,7 @@ type Mutation {
     email: String!
     cellPhone: String!
     company: String
-    companyDesc: [String!]!
+    companyDesc: String
     team: String
     position: String
     workPhone: String

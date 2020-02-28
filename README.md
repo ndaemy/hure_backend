@@ -51,6 +51,7 @@ There are two types of users:
 - [x] Create my profile (request)
 - [x] Email confirm request
 - [x] Email confirm / Sign in
+- [x] See my profile
 - [x] Edit my profile
 
 ### Admin users

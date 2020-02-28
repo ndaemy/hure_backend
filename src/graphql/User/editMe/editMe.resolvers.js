@@ -5,7 +5,6 @@ export default {
     editMe: async (_, args, { request, isUser }) => {
       isUser(request);
       const {
-        id,
         name,
         birthday,
         email,
@@ -20,8 +19,6 @@ export default {
         majorName,
         generation
       } = args;
-      if (request.user.id !== id)
-        throw Error('You are not allowed to edit other person!');
 
       const major = await prisma.major({ name: majorName });
       const gradYear = await prisma.gradYear({ generation });
@@ -38,7 +35,7 @@ export default {
       }
 
       return await prisma.updateUser({
-        where: { id },
+        where: { id: request.user.id },
         data: {
           name,
           birthday,

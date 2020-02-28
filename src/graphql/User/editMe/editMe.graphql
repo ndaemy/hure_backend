@@ -1,6 +1,5 @@
 type Mutation {
   editMe(
-    id: ID!
     name: String!
     birthday: String!
     email: String!

@@ -2,11 +2,20 @@ import { prisma } from '../../../../generated/prisma-client';
 
 export default {
   Query: {
-    howManyUser: async (_, __, { request, isAdminOrUser }) => {
+    howManyUser: async (_, args, { request, isAdminOrUser }) => {
       isAdminOrUser(request);
+      const { major, generation } = args;
 
       return await prisma
-        .usersConnection({ where: { isConfirmed: true } })
+        .usersConnection({
+          where: {
+            AND: [
+              { isConfirmed: true },
+              { major: { name: major } },
+              { graduatedYear: { generation: generation } }
+            ]
+          }
+        })
         .aggregate()
         .count();
     }

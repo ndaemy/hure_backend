@@ -82,6 +82,7 @@ There are two types of users:
 
 - [x] See all graduated year
 - [x] Create graduated year
+- [x] Delete graduated year
 
 ---
 

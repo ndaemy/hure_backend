@@ -1,0 +1,3 @@
+type Mutation {
+  deleteGradYear(id: ID!): GradYear!
+}

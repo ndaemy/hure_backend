@@ -30,11 +30,6 @@ export default {
         throw Error('Graduated year not exist. Please make generation first.');
       }
 
-      let companyDescArray = null;
-      if (companyDesc && companyDesc !== '') {
-        companyDescArray = companyDesc.split(/\r?\n/);
-      }
-
       return await prisma.updateUser({
         where: { id },
         data: {
@@ -44,7 +39,7 @@ export default {
           cellPhone,
           company,
           companyDesc: {
-            set: companyDescArray
+            set: companyDesc
           },
           team,
           position,

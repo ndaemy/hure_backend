@@ -4,8 +4,11 @@ import { prisma } from '../../../../generated/prisma-client';
 export default {
   Mutation: {
     requestSecret: async (_, { email }) => {
-      const emailSecret = generateSecret();
       try {
+        const user = await prisma.user({ email });
+        if (!user || !user.isConfirmed) throw Error('Not confirmed yet!');
+
+        const emailSecret = generateSecret();
         await prisma.updateUser({
           data: {
             emailSecret

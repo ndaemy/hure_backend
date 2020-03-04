@@ -50,6 +50,7 @@ Hanyang Univ. Graduate School of Real Estate Convergence Reunion app backend
 - deleteUser(...): User
 - editMe(...): User
 - editUser(...): User
+- rejectRequests(...): Boolean
 - requestCreateUser(...): User
 - requestSecret(...): Boolean
 

@@ -23,6 +23,7 @@ Hanyang Univ. Graduate School of Real Estate Convergence Reunion app backend
 - howManyNotice: Int
 - seeAllNotice(limit, page): Notice[]
 - seeLatestNotice: Notice
+- seeNotice(id): Notice
 - seeAllProf: Prof[]
 - seeProf(id): Prof
 - howManyRequest: Int

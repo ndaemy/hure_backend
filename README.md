@@ -42,6 +42,7 @@ There are two types of users:
 
 - [x] See professors
 - [x] See specific professor
+- [x] See notices
 - [x] See notice
 - [x] See lastest notice
 - [x] See all users (with pagination / limit with major, generation)

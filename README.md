@@ -78,7 +78,7 @@ There are two types of users:
 
 - [x] Create notice
 - [x] Edit notice
-- [ ] Delete notice
+- [x] Delete notice
 
 ---
 

@@ -32,6 +32,7 @@ Hanyang Univ. Graduate School of Real Estate Convergence Reunion app backend
 - seeAllRequest(limit, page): User[]
 - seeAllUser(...): User[]
 - seeMe: User
+- seeRequest: User[]
 - seeUser: User[]
 
 ### Mutations

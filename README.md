@@ -43,7 +43,7 @@ There are two types of users:
 - [x] See professors
 - [x] See specific professor
 - [x] See notices
-- [x] See notice
+- [x] See specific notice
 - [x] See lastest notice
 - [x] See all users (with pagination / limit with major, generation)
 - [x] See specific user
@@ -65,6 +65,7 @@ There are two types of users:
 - [x] Edit user profile
 - [x] Delete user profile
 - [x] See all requests
+- [x] See specific request
 - [x] Confirm requests
 - [x] Reject requests
 

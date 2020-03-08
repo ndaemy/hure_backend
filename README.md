@@ -67,6 +67,7 @@ There are two types of users:
 - [x] See all requests
 - [x] See specific request
 - [x] Confirm requests
+- [x] Reject request
 - [x] Reject requests
 
 ---

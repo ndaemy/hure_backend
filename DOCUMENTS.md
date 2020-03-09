@@ -48,6 +48,7 @@ Hanyang Univ. Graduate School of Real Estate Convergence Reunion app backend
 - createProf(...): Prof
 - deleteProf(...): Prof
 - editProf(...): Prof
+- confirmRequest(...): User
 - confirmRequests(...): Boolean
 - confirmSecret(...): Token
 - createUser(...): User

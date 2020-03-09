@@ -66,6 +66,7 @@ There are two types of users:
 - [x] Delete user profile
 - [x] See all requests
 - [x] See specific request
+- [x] Confirm request
 - [x] Confirm requests
 - [x] Reject request
 - [x] Reject requests

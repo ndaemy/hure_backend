@@ -2,12 +2,13 @@ type Mutation {
   editProf(
     id: ID!
     name: String!
+    title: String!
+    position: String!
     email: String
     workPhone: String
-    position: String!
-    title: String!
     company: String
     order: Int!
     photo: String
+    majorName: String!
   ): Prof!
 }

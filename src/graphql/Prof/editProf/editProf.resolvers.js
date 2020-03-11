@@ -13,8 +13,14 @@ export default {
         title,
         company,
         order,
-        photo
+        photo,
+        majorName
       } = args;
+
+      const major = await prisma.major({ name: majorName });
+      if (!major) {
+        throw Error('Major not exist. Please make major first.');
+      }
 
       return await prisma.updateProf({
         where: { id },
@@ -26,7 +32,10 @@ export default {
           title,
           company,
           order,
-          photo
+          photo,
+          major: {
+            connect: { name: majorName }
+          }
         }
       });
     }

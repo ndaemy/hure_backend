@@ -6,24 +6,33 @@ export default {
       isAdmin(request);
       const {
         name,
+        title,
+        position,
         email,
         workPhone,
-        position,
-        title,
         company,
         order,
-        photo
+        photo,
+        majorName
       } = args;
+
+      const major = await prisma.major({ name: majorName });
+      if (!major) {
+        throw Error('Major not exist. Please make major first.');
+      }
 
       return await prisma.createProf({
         name,
+        title,
+        position,
         email,
         workPhone,
-        position,
-        title,
         company,
         order,
-        photo
+        photo,
+        major: {
+          connect: { name: majorName }
+        }
       });
     }
   }

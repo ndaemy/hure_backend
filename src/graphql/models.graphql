@@ -38,13 +38,14 @@ type Executive {
 type Prof {
   id: ID!
   name: String!
+  title: String!
+  position: String!
   email: String
   workPhone: String
-  position: String!
-  title: String!
   company: String
   order: Int!
   photo: String
+  major: Major!
   createdAt: String!
   updatedAt: String!
 }
@@ -53,6 +54,7 @@ type Major {
   id: ID!
   name: String!
   users: [User!]!
+  profs: [Prof!]!
   createdAt: String!
   updatedAt: String!
 }

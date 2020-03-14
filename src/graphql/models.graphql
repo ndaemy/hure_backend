@@ -55,6 +55,8 @@ type Major {
   name: String!
   users: [User!]!
   profs: [Prof!]!
+  howManyUsers: Int!
+  howManyProfs: Int!
   createdAt: String!
   updatedAt: String!
 }

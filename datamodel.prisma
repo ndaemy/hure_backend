@@ -9,9 +9,9 @@ type Admin {
 type User {
   id: ID! @id
   name: String!
-  birthday: DateTime!
+  birthday: DateTime
   email: String! @unique
-  cellPhone: String! @unique
+  cellPhone: String @unique
   company: String
   companyDesc: [String!]! @scalarList(strategy: RELATION)
   team: String

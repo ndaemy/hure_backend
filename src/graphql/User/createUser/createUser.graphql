@@ -1,9 +1,9 @@
 type Mutation {
   createUser(
     name: String!
-    birthday: String!
+    birthday: String
     email: String!
-    cellPhone: String!
+    cellPhone: String
     company: String
     companyDesc: [String!]!
     team: String

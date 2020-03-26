@@ -56,6 +56,7 @@ type Prof {
 type Major {
   id: ID!
   name: String!
+  shortName: String!
   users: [User!]!
   profs: [Prof!]!
   howManyUsers: Int!

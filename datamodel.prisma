@@ -2,6 +2,9 @@ type Admin {
   id: ID! @id
   username: String! @unique
   password: String!
+  name: String!
+  phone: String!
+  email: String!
   createdAt: DateTime! @createdAt
   updatedAt: DateTime! @updatedAt
 }

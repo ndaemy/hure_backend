@@ -40,6 +40,7 @@ There are two types of users:
 
 ### Normal users
 
+- [x] See admin info
 - [x] See professors
 - [x] See specific professor
 - [x] See notices

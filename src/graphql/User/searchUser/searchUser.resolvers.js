@@ -10,9 +10,13 @@ export default {
             {
               OR: [
                 { name_contains: query },
-                { email_contains: query },
                 { cellPhone_contains: query },
-                { company_contains: query }
+                { company_contains: query },
+                {
+                  major: {
+                    name_contains: query
+                  }
+                }
               ]
             },
             { isConfirmed: true }

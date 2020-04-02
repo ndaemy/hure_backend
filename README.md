@@ -98,5 +98,4 @@ There are two types of users:
 ---
 
 - [x] Create executive
-- [ ] Edit executive
-- [ ] Delete executive
+- [x] Delete executive

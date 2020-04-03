@@ -26,7 +26,7 @@ type User {
   isConfirmed: Boolean! @default(value: false)
   major: Major!
   graduatedYear: GradYear!
-  executive: Executive @relation(link: TABLE, onDelete: CASCADE)
+  executive: [Executive!]! @relation(link: TABLE, onDelete: CASCADE)
   createdAt: DateTime! @createdAt
   updatedAt: DateTime! @updatedAt
 }

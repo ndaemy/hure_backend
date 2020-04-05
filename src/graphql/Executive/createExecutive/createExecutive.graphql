@@ -1,3 +1,7 @@
 type Mutation {
-  createExecutive(generation: Int!, title: String!, userId: ID!): Executive!
+  createExecutive(
+    generation: Int!
+    title: String!
+    userEmail: String!
+  ): Executive!
 }

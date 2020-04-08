@@ -1,3 +1,3 @@
 type Mutation {
-  editMajor(id: ID!, name: String!): Major!
+  editMajor(id: ID!, name: String!, shortName: String!): Major!
 }

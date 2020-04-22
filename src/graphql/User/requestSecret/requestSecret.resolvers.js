@@ -8,12 +8,12 @@ export default {
         const user = await prisma.user({ email });
         if (!user || !user.isConfirmed) throw Error('Not confirmed yet!');
 
-        if (user.email === 'qospwmf@gmail.com') {
+        if (user.email === 'eunhye.grace.bae@gmail.com') {
           await prisma.updateUser({
             data: {
-              emailSecret: 'passwd'
+              emailSecret: 'passwd',
             },
-            where: { email }
+            where: { email },
           });
           return true;
         }
@@ -21,11 +21,11 @@ export default {
         const emailSecret = generateSecret();
         await prisma.updateUser({
           data: {
-            emailSecret
+            emailSecret,
           },
           where: {
-            email
-          }
+            email,
+          },
         });
         await sendSecretMail(email, emailSecret);
         return true;
@@ -33,6 +33,6 @@ export default {
         console.log(e);
         return false;
       }
-    }
-  }
+    },
+  },
 };
